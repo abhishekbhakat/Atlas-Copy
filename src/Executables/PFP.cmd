@@ -16,7 +16,7 @@ exit /b
 REM On recent Windows 10 versions, resolutions called for are:
 REM 32x32, 40x40, 48x48, 64x64, 96x96, 192x192, 208x208, 240x240, 424x424,
 REM 448x448, 1080x1080
-set "usrPfpDir=!PUBLIC!\AccountPictures\%~1"
+@REM set "usrPfpDir=!PUBLIC!\AccountPictures\%~1"
 
 if exist "!usrPfpDir!" exit /b
 mkdir "!usrPfpDir!"
