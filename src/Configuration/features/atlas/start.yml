@@ -225,7 +225,7 @@ actions:
     command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums powertoys'
     weight: 150
   
-- !writeStatus: {status: 'Installing Visual Studio Code'}
+  - !writeStatus: {status: 'Installing Visual Studio Code'}
   - !cmd:
     command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums vscode git'
     weight: 150
