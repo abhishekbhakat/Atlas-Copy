@@ -214,6 +214,21 @@ actions:
   - !cmd:
     command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums vcredist-all'
     weight: 150
+  
+  - !writeStatus: {status: 'Installing Firefox-Dev'}
+  - !cmd:
+    command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums firefox-dev --pre'
+    weight: 150
+  
+  - !writeStatus: {status: 'Installing Powertoys'}
+  - !cmd:
+    command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums powertoys'
+    weight: 150
+  
+- !writeStatus: {status: 'Installing Visual Studio Code'}
+  - !cmd:
+    command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums vscode git'
+    weight: 150
 
   - !writeStatus: {status: 'Installing 7-Zip'}
   - !cmd:
