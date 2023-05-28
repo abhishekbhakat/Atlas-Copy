@@ -220,7 +220,7 @@ actions:
     command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums 7zip'
     weight: 150
   
-    - !writeStatus: {status: 'Installing Firefox-Dev'}
+  - !writeStatus: {status: 'Installing Firefox-Dev'}
   - !cmd:
     command: '"%ProgramData%\chocolatey\bin\choco.exe" install -y --force --allow-empty-checksums firefox-dev --pre'
     weight: 150
